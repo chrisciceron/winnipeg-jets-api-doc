@@ -1,8 +1,6 @@
 part1
 
-
-
-
+This API provides Winnipeg Jets team and individual players.
 
 1) https://api.winnipegjets.ca/json/currentTeam 	= Current players in Winnipeg Jet
 
