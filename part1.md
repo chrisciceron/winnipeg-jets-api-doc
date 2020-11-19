@@ -42,4 +42,3 @@ The result of the request will be formatted using JSON
 - [Prakhar Sharma](https://github.com/Neil3108)
 - [Chris Ciceron](https://github.com/chrisciceron)
 
-#TESTING
