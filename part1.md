@@ -32,7 +32,9 @@ https://api.winnipegjets.ca/?year=2008&pos=middle 	= Name of the player that pla
 
 The result of the request will be formatted using JSON
 
+```
 **Insert examples here**
+```
 
 #### Authors and Acknowledgements
 
