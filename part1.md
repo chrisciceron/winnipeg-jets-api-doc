@@ -1,5 +1,7 @@
 ## Winnipeg Jets API
 
+This API provides information about the Winnipeg Jets hockey team.
+
 #### Contents
 - [API Documentation](#api-documentation)
 - [Parameters](#parameters)
