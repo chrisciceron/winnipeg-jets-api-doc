@@ -9,6 +9,14 @@ This Winnipeg Jets API uses simple GET methods to request for JSON formatted dat
     - [Parameters](#parameters-1)
     - [Request](#request)
     - [Response](#response)
+  - [Getting a player's stats](getting-a-players-stats)
+    - [Parameters](#parameters-2)
+    - [Request](#request-1)
+    - [Response](#response-1)
+  - [Getting a player's stats for a specific season](getting-a-players-stats-for-a-specific-season)
+    - [Parameters](#parameters-3)
+    - [Request](#request-2)
+    - [Response](#response-2)
 - [Authors and Acknowledgements](#authors-and-acknowledgements)
 
 ## Parameters
@@ -254,6 +262,21 @@ The result of the request will be formatted using JSON.
   }
 }
 ```
+### Getting a player's stats
+
+#### Parameters
+
+#### Request
+
+#### Response
+
+### Getting a player's stats for a specific season
+
+#### Parameters
+
+#### Request
+
+#### Response
 
 
 ## Authors and Acknowledgements
