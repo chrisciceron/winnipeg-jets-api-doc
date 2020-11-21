@@ -1,14 +1,11 @@
 ## Winnipeg Jets API
 
-This API provides information about the Winnipeg Jets hockey team.
+This Winnipeg Jets API uses simple GET methods to request for JSON formatted data about team and player information of Winnipeg Jets hockey team.
 
 #### Contents
-- [API Documentation](#api-documentation)
 - [Parameters](#parameters)
 - [Sample Requests](#sample-requests)
 - [Authors and Acknowledgements](#authors-and-acknowledgements)
-
-#### API Documentation
 
 #### Parameters
 
