@@ -263,7 +263,7 @@ The result of the request will be formatted using JSON.
 }
 ```
 ### Getting a player's stats
-This retrieves the stats for a particular Winnipeg Jets' player, based on the name specified on the request.
+This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request.
 
 #### Parameters
 ``` 
