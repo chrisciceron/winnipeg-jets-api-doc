@@ -287,11 +287,11 @@ The result of the request will be formatted using JSON.
     "NHLTotals": 369,
     "lastSesionPlayed": 2019,
     "Lge": "NHL"
-    "GP": 369
-    "G": 115
-    "A": 142
-    "P": 257
-    "PIM": 130
+    "GameePlayed": 369
+    "Goals": 115
+    "Assist": 142
+    "Points": 257
+    "PenaltyMinute": 130
   }
 }
 ```
@@ -313,16 +313,12 @@ https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers&year=2019
   {
     "firstName": "Nikolaj",
     "lastName": "Ehlers",
-    "jerseyNumber": 27,
-    "Age": 24,
-    "position": "L",
-    "Lge": "NHL"
-    "season": 2019
-    "GP": 71
-    "G": 25
-    "A": 33
-    "P": 33
-    "PIM": 58
+    "Lge": "NHL",
+    "GamePlayed": 71,
+    "Goals": 25,
+    "Assist": 33,
+    "Point": 33,
+    "PenaltyMinute": 58
   }
 }
 ```
