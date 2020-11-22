@@ -325,7 +325,7 @@ https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers&year=2019
     "PIM": 58
   }
 }
-
+```
 ## Authors and Acknowledgements
 
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
