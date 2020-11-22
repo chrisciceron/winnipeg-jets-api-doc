@@ -48,7 +48,7 @@ https://api.winnipegjets.ca/json/year=2020
 
 The result of the request will be formatted using JSON.
 
-```json
+```
 {
   {
     "firstName": "Mason",
@@ -276,7 +276,7 @@ https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers
 
 #### Response
 The result of the request will be formatted using JSON.
-```json
+```
 {
   {
     "firstName": "Nikolaj",
@@ -308,7 +308,7 @@ year (int): Year of the season. Required.
 https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers&year=2019
 ```
 #### Response
-```json
+```
 {
   {
     "firstName": "Nikolaj",
