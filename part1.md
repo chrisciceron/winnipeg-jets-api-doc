@@ -48,7 +48,7 @@ https://api.winnipegjets.ca/json/year=2020
 
 The result of the request will be formatted using JSON.
 
-```json
+```
 {
   {
     "firstName": "Mason",
