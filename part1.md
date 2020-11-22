@@ -263,13 +263,33 @@ The result of the request will be formatted using JSON.
 }
 ```
 ### Getting a player's stats
+This retrieves the stats for a particular Winnipeg Jets' player, based on the name specified on the request.
+
 
 #### Parameters
-
+``` 
+name (string): Name of the player. Required.
+```
 #### Request
+``` 
+https://api.winnipegjets.ca/json/name=Nikolaj-Ehlers
+```
 
 #### Response
-
+```
+{
+  {
+    "firstName": "Nikolaj"
+    "lastName": "Ehlers"
+    "jerseyNumber": 27
+    "Age": 24
+    "position": "L"
+    "NHLTotals": 369
+    "lastSesionPlayed": 2019
+    "Lge": "NHL"
+  }
+}
+```
 ### Getting a player's stats for a specific season
 
 #### Parameters
