@@ -265,39 +265,66 @@ The result of the request will be formatted using JSON.
 ### Getting a player's stats
 This retrieves the stats for a particular Winnipeg Jets' player, based on the name specified on the request.
 
-
 #### Parameters
 ``` 
 name (string): Name of the player. Required.
 ```
 #### Request
 ``` 
-https://api.winnipegjets.ca/json/name=Nikolaj-Ehlers
+https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers
 ```
 
 #### Response
-```
+The result of the request will be formatted using JSON.
+```json
 {
   {
-    "firstName": "Nikolaj"
-    "lastName": "Ehlers"
-    "jerseyNumber": 27
-    "Age": 24
-    "position": "L"
-    "NHLTotals": 369
-    "lastSesionPlayed": 2019
+    "firstName": "Nikolaj",
+    "lastName": "Ehlers",
+    "jerseyNumber": 27,
+    "Age": 24,
+    "position": "L",
+    "NHLTotals": 369,
+    "lastSesionPlayed": 2019,
     "Lge": "NHL"
+    "GP": 369
+    "G": 115
+    "A": 142
+    "P": 257
+    "PIM": 130
   }
 }
 ```
 ### Getting a player's stats for a specific season
+This retrieves the stats for a particular Winnipeg Jets' player for a particular season, based on the name and year specified on the request.
 
 #### Parameters
-
+``` 
+name (string): Name of the player. Required.
+year (int): Year of the season. Required.
+```
 #### Request
-
+``` 
+https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers&year=2019
+```
 #### Response
-
+```json
+{
+  {
+    "firstName": "Nikolaj",
+    "lastName": "Ehlers",
+    "jerseyNumber": 27,
+    "Age": 24,
+    "position": "L",
+    "Lge": "NHL"
+    "season": 2019
+    "GP": 71
+    "G": 25
+    "A": 33
+    "P": 33
+    "PIM": 58
+  }
+}
 
 ## Authors and Acknowledgements
 
