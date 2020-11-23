@@ -279,10 +279,10 @@ The result of the request will be formatted using JSON.
     "NHLTotals": 369,
     "lastSesionPlayed": 2019,
     "league": "NHL"
-    "gamesPlayed": 369
-    "goals": 115
-    "assist": 142
-    "points": 257
+    "gamesPlayed": 369,
+    "goals": 115,
+    "assist": 142,
+    "points": 257,
     "penaltyMinute": 130
   }
 }
