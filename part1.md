@@ -38,6 +38,9 @@ https://api.winnipegjets.ca/json/year=2020
 
 The result of the request will be formatted using JSON.
 
+<details>
+  <summary>See sample response. </summary>
+  
 ```
 {
   {
@@ -252,6 +255,9 @@ The result of the request will be formatted using JSON.
   }
 }
 ```
+
+  </details>
+  
 ### Getting a player's stats
 This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request.
 
@@ -286,6 +292,7 @@ The result of the request will be formatted using JSON.
   }
 }
 ```
+
 ### Getting a player's stats for a specific season
 This retrieves the stats for a particular Winnipeg Jets player for a particular season, based on the name and year specified on the request.
 
@@ -315,8 +322,7 @@ https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
   }
 }
 ```
-## Authors and Acknowledgements
-
+## Authors
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
 - [Prakhar Sharma](https://github.com/Neil3108)
 - [Chris Ciceron](https://github.com/chrisciceron)
