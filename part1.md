@@ -27,9 +27,7 @@ This retrieves the Winnipeg Jets roster, based on the year specified on the requ
 
 #### Parameters
 
-```
-year (int): Specific year. Required.
-```
+`year (int)`: Specific year. Required.
 #### Request
 
 This uses a GET request to obtain the information on the roster.
@@ -258,10 +256,11 @@ The result of the request will be formatted using JSON.
 This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request.
 
 #### Parameters
-``` 
-firstName (string): First name of the player. Required.
-lastName (string): Last name of the player. Required.
-```
+
+`firstName (string)`: First name of the player. Required.
+
+`lastName (string)`: Last name of the player. Required.
+
 #### Request
 ``` 
 https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers
@@ -291,11 +290,13 @@ The result of the request will be formatted using JSON.
 This retrieves the stats for a particular Winnipeg Jets player for a particular season, based on the name and year specified on the request.
 
 #### Parameters
-``` 
-firstName (string): First name of the player. Required.
-lastName (string): Last name of the player. Required.
-year (int): Year of the season. Required.
-```
+
+`firstName (string)`: First name of the player. Required.
+
+`lastName (string)`: Last name of the player. Required.
+
+`year (int)`: Year of the season. Required.
+
 #### Request
 ``` 
 https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
