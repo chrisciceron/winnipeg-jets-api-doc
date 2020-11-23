@@ -259,7 +259,8 @@ This retrieves the stats for a particular Winnipeg Jets player, based on the nam
 
 #### Parameters
 ``` 
-name (string): Name of the player. Required.
+firstName (string): First name of the player. Required.
+lastName (string): Last name of the player. Required.
 ```
 #### Request
 ``` 
@@ -291,7 +292,8 @@ This retrieves the stats for a particular Winnipeg Jets player for a particular 
 
 #### Parameters
 ``` 
-name (string): Name of the player. Required.
+firstName (string): First name of the player. Required.
+lastName (string): Last name of the player. Required.
 year (int): Year of the season. Required.
 ```
 #### Request
