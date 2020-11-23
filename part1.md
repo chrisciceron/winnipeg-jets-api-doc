@@ -271,7 +271,7 @@ name (string): Name of the player. Required.
 ```
 #### Request
 ``` 
-https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers
+https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers
 ```
 
 #### Response
@@ -305,7 +305,7 @@ year (int): Year of the season. Required.
 ```
 #### Request
 ``` 
-https://api.winnipegjets.ca/json?name=Nikolaj-Ehlers&year=2019
+https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
 ```
 #### Response
 ```
