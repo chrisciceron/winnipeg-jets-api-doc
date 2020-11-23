@@ -3,29 +3,21 @@
 This Winnipeg Jets API uses simple GET methods to request for JSON formatted data about team and player information of Winnipeg Jets hockey team.
 
 ## Contents
-- [Parameters](#parameters)
 - [API Reference Index](#api-reference-index)
   - [Getting the roster](getting-the-roster)
-    - [Parameters](#parameters-1)
+    - [Parameters](#parameters)
     - [Request](#request)
     - [Response](#response)
   - [Getting a player's stats](getting-a-players-stats)
-    - [Parameters](#parameters-2)
+    - [Parameters](#parameters-1)
     - [Request](#request-1)
     - [Response](#response-1)
   - [Getting a player's stats for a specific season](getting-a-players-stats-for-a-specific-season)
-    - [Parameters](#parameters-3)
+    - [Parameters](#parameters-2)
     - [Request](#request-2)
     - [Response](#response-2)
 - [Authors and Acknowledgements](#authors-and-acknowledgements)
 
-## Parameters
-
-- year (int): Specific year. Required. 
-
-- player (string): Name of the player. Required.
-
-- pos (string): Position in the game. Required.
 
 ## API Reference Index
 
@@ -263,22 +255,65 @@ The result of the request will be formatted using JSON.
 }
 ```
 ### Getting a player's stats
+This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request.
 
 #### Parameters
-
+``` 
+firstName (string): First name of the player. Required.
+lastName (string): Last name of the player. Required.
+```
 #### Request
+``` 
+https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers
+```
 
 #### Response
-
+The result of the request will be formatted using JSON.
+```
+{
+  {
+    "id": 66,
+    "jerseyNumber": 27,
+    "age": 24,
+    "position": "L",
+    "NHLTotals": 369,
+    "lastSesionPlayed": 2019,
+    "league": "NHL"
+    "gamesPlayed": 369
+    "goals": 115
+    "assist": 142
+    "points": 257
+    "penaltyMinute": 130
+  }
+}
+```
 ### Getting a player's stats for a specific season
+This retrieves the stats for a particular Winnipeg Jets player for a particular season, based on the name and year specified on the request.
 
 #### Parameters
-
+``` 
+firstName (string): First name of the player. Required.
+lastName (string): Last name of the player. Required.
+year (int): Year of the season. Required.
+```
 #### Request
-
+``` 
+https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
+```
 #### Response
-
-
+```
+{
+  {
+    "id": 66,
+    "league": "NHL",
+    "gamePlayed": 71,
+    "goals": 25,
+    "assist": 33,
+    "point": 33,
+    "penaltyMinute": 58
+  }
+}
+```
 ## Authors and Acknowledgements
 
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
