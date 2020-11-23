@@ -16,7 +16,7 @@ This Winnipeg Jets API uses simple GET methods to request for JSON formatted dat
     - [Parameters](#parameters-2)
     - [Request](#request-2)
     - [Response](#response-2)
-- [Authors and Acknowledgements](#authors-and-acknowledgements)
+- [Authors](#authors)
 
 
 ## API Reference Index
