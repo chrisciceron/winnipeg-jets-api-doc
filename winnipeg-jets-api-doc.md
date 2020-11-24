@@ -4,23 +4,32 @@ This Winnipeg Jets API uses simple GET methods to request for JSON formatted dat
 
 ## Contents
 - [API Reference Index](#api-reference-index)
-  - [Getting the roster](getting-the-roster)
+  - [Team Roster](#team-roster)
     - [Parameters](#parameters)
-    - [Request](#request)
+    - [Resources Description as JSON](#resources-description-as-json)
+    - [Sample Request](#sample-request)
     - [Response](#response)
-  - [Getting a player's stats](getting-a-players-stats)
+  - [Player Stats](#player-stats)
     - [Parameters](#parameters-1)
-    - [Request](#request-1)
+    - [Resources Description as JSON](#resources-description-as-json-1)
+    - [Sample Request Without Year](#sample-request-without-year)
     - [Response](#response-1)
-  - [Getting a player's stats for a specific season](getting-a-players-stats-for-a-specific-season)
-    - [Parameters](#parameters-2)
-    - [Request](#request-2)
+    - [Sample Request With Year](#sample-request-with-year)
     - [Response](#response-2)
 - [Authors](#authors)
 
 
 ## API Reference Index
 
+### Team Roster
+
+This retrieves the Winnipeg Jets roster, based on the year specified on the request. 
+
+#### Parameters
+
+`year (int)`: Specific year. Required.
+
+#### Resources Description as JSON
 ```
 {
 	"resource" : "player",
@@ -34,19 +43,11 @@ This Winnipeg Jets API uses simple GET methods to request for JSON formatted dat
 	"queryParameters" : null,
 }
 ```
-
-### Getting the roster
-
-This retrieves the Winnipeg Jets roster, based on the year specified on the request. 
-
-#### Parameters
-
-`year (int)`: Specific year. Required.
-#### Request
+#### Sample Request
 
 This uses a GET request to obtain the information on the roster.
 ``` 
-https://api.winnipegjets.ca/json/year=2020
+https://api.winnipegjets.ca/player/roster/{2020}
 ```
 #### Response
 
@@ -272,8 +273,8 @@ The result of the request will be formatted using JSON.
 
   </details>
   
-### Getting a player's stats
-This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request.
+### Player Stats
+This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request. If year is mentioned it gives stats for that particular season.
 
 #### Parameters
 
@@ -281,9 +282,28 @@ This retrieves the stats for a particular Winnipeg Jets player, based on the nam
 
 `lastName (string)`: Last name of the player. Required.
 
-#### Request
+`year (int)`: Year of the season. Optional.
+
+#### Resources Description as JSON
+```
+{
+	"resource" : "player",
+	"endpoint" : {
+		"type" : "GET",
+		"path" : "/player/stats/"
+	},
+	"pathParameters" : null,
+	"queryParameters" : {
+		"firstName" : "string",
+		"lastName" : "string"
+		"year" : "int"
+	}
+}
+```
+
+#### Sample Request Without Year
 ``` 
-https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers
+https://api.winnipegjets.ca/player/stats?firstName=Nikolaj&lastName=Ehlers
 ```
 
 #### Response
@@ -292,11 +312,6 @@ The result of the request will be formatted using JSON.
 {
   {
     "id": 66,
-    "jerseyNumber": 27,
-    "age": 24,
-    "position": "L",
-    "NHLTotals": 369,
-    "lastSesionPlayed": 2019,
     "league": "NHL"
     "gamesPlayed": 369,
     "goals": 115,
@@ -306,19 +321,7 @@ The result of the request will be formatted using JSON.
   }
 }
 ```
-
-### Getting a player's stats for a specific season
-This retrieves the stats for a particular Winnipeg Jets player for a particular season, based on the name and year specified on the request.
-
-#### Parameters
-
-`firstName (string)`: First name of the player. Required.
-
-`lastName (string)`: Last name of the player. Required.
-
-`year (int)`: Year of the season. Required.
-
-#### Request
+#### Sample Request With Year
 ``` 
 https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
 ```
@@ -331,7 +334,7 @@ https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
     "gamePlayed": 71,
     "goals": 25,
     "assist": 33,
-    "point": 33,
+    "points": 33,
     "penaltyMinute": 58
   }
 }
