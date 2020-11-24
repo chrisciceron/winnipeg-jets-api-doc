@@ -52,7 +52,7 @@ https://api.winnipegjets.ca/player/roster/{2020}
 #### Response
 
 The result of the request will be formatted using JSON.
-
+```
 <details>
   <summary> See sample response {...} </summary>
   
@@ -272,6 +272,7 @@ The result of the request will be formatted using JSON.
 ```
 
   </details>
+```
   
 ### Player Stats
 This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request. If year is mentioned it gives stats for that particular season.
