@@ -1,6 +1,6 @@
 # Winnipeg Jets API
 
-This Winnipeg Jets API uses simple GET methods to request for JSON formatted data about team and player information of Winnipeg Jets hockey team.
+This is a simple API the uses GET method to retrieve information about Winnipeg Jets team player stats and roster.
 
 ## Contents
 - [API Reference Index](#api-reference-index)
@@ -26,10 +26,10 @@ Resource: **player**
 
 List of endpoints:
 
-|Type|Path|
-|-|-|
-| GET | /player/roster/{year} |
-|GET|/player/stats/|
+||Type|Path|
+|-|-|-|
+|1.| GET | /player/roster/{year} |
+|2.|GET|/player/stats/|
 
 ---
 
@@ -59,7 +59,7 @@ This retrieves the Winnipeg Jets roster, based on the year specified on the requ
 
 This uses a GET request to obtain the information on the roster.
 ``` 
-https://api.winnipegjets.ca/player/roster/{2020}
+https://api.winnipegjets.ca/player/roster/2020
 ```
 #### Response
 
@@ -356,6 +356,7 @@ https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
 
 ---
 ## Authors
+
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
 - [Prakhar Sharma](https://github.com/Neil3108)
 - [Chris Ciceron](https://github.com/chrisciceron)
