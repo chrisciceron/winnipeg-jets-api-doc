@@ -21,6 +21,20 @@ This Winnipeg Jets API uses simple GET methods to request for JSON formatted dat
 
 ## API Reference Index
 
+```
+{
+	"resource" : "player",
+	"endpoint" : {
+		"type" : "GET",
+		"path" : "/player/roster/{year}"
+	},
+	"pathParameters" : {
+		"year" : "int"
+	},
+	"queryParameters" : null,
+}
+```
+
 ### Getting the roster
 
 This retrieves the Winnipeg Jets roster, based on the year specified on the request. 
