@@ -54,7 +54,7 @@ https://api.winnipegjets.ca/player/roster/{2020}
 The result of the request will be formatted using JSON.
 
 <details>
-  <summary> See sample response {...} </summary>
+  <summary><strong> See sample response {...} </strong></summary>
   
 ```
 {
