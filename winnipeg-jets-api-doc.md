@@ -309,7 +309,7 @@ This retrieves the stats for a particular Winnipeg Jets player, based on the nam
 	"pathParameters" : null,
 	"queryParameters" : {
 		"firstName" : "string",
-		"lastName" : "string"
+		"lastName" : "string",
 		"year" : "int"
 	}
 }
