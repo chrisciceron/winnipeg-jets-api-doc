@@ -18,8 +18,20 @@ This Winnipeg Jets API uses simple GET methods to request for JSON formatted dat
     - [Response](#response-2)
 - [Authors](#authors)
 
+---
 
 ## API Reference Index
+
+Resource: **player**
+
+List of endpoints:
+
+|Type|Path|
+|-|-|
+| GET | /player/roster/{year} |
+|GET|/player/stats/|
+
+---
 
 ### Team Roster
 
@@ -272,7 +284,9 @@ The result of the request will be formatted using JSON.
 ```
 
   </details>
-  
+
+---
+
 ### Player Stats
 This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request. If year is mentioned it gives stats for that particular season.
 
@@ -339,6 +353,8 @@ https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
   }
 }
 ```
+
+---
 ## Authors
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
 - [Prakhar Sharma](https://github.com/Neil3108)
