@@ -1,8 +1,9 @@
 # Winnipeg Jets API
 
-This is a simple API that uses GET methods to retrieve information about Winnipeg Jets hockey team player stats and roster.
+This is a simple API that uses GET methods to retrieve information about the team roster and the player stats of Winnipeg Jets.
 
 ## Contents
+
 - [API Reference Index](#api-reference-index)
   - [Team Roster](#team-roster)
     - [Parameters](#parameters)
@@ -44,23 +45,25 @@ This retrieves the Winnipeg Jets roster, based on the year specified on the requ
 #### Resources Description as JSON
 ```
 {
-	"resource" : "player",
-	"endpoint" : {
-		"type" : "GET",
-		"path" : "/player/roster/{year}"
-	},
-	"pathParameters" : {
-		"year" : "int"
-	},
-	"queryParameters" : null,
+  "resource" : "player",
+  "endpoint" : {
+    "type" : "GET",
+    "path" : "/player/roster/{year}"
+  },
+  "pathParameters" : {
+    "year" : "int"
+  },
+  "queryParameters" : null
 }
 ```
 #### Sample Request
 
 This uses a GET request to obtain the information on the roster.
+
 ``` 
 https://api.winnipegjets.ca/player/roster/2020
 ```
+
 #### Response
 
 The result of the request will be formatted using JSON.
@@ -288,7 +291,8 @@ The result of the request will be formatted using JSON.
 ---
 
 ### Player Stats
-This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request. If year is mentioned it gives stats for that particular season.
+
+This retrieves the stats for a particular Winnipeg Jets player, based on the name specified on the request. If year is mentioned, it gives the stats for that particular season.
 
 #### Parameters
 
@@ -301,27 +305,30 @@ This retrieves the stats for a particular Winnipeg Jets player, based on the nam
 #### Resources Description as JSON
 ```
 {
-	"resource" : "player",
-	"endpoint" : {
-		"type" : "GET",
-		"path" : "/player/stats/"
-	},
-	"pathParameters" : null,
-	"queryParameters" : {
-		"firstName" : "string",
-		"lastName" : "string",
-		"year" : "int"
-	}
+  "resource" : "player",
+  "endpoint" : {
+    "type" : "GET",
+    "path" : "/player/stats/"
+  },
+  "pathParameters" : null,
+  "queryParameters" : {
+    "firstName" : "string",
+    "lastName" : "string",
+    "year" : "int"
+  }
 }
 ```
 
 #### Sample Request Without Year
+
 ``` 
 https://api.winnipegjets.ca/player/stats?firstName=Nikolaj&lastName=Ehlers
 ```
 
 #### Response
+
 The result of the request will be formatted using JSON.
+
 ```
 {
   {
@@ -335,10 +342,13 @@ The result of the request will be formatted using JSON.
   }
 }
 ```
+
 #### Sample Request With Year
+
 ``` 
-https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
+https://api.winnipegjets.ca/player/stats?firstName=Nikolaj&lastName=Ehlers&year=2019
 ```
+
 #### Response
 ```
 {
@@ -355,10 +365,10 @@ https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
 ```
 
 ---
+
 ## Authors
 
 Group 13:
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
 - [Prakhar Sharma](https://github.com/Neil3108)
 - [Chris Ciceron](https://github.com/chrisciceron)
-
