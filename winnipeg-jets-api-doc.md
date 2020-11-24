@@ -346,7 +346,7 @@ The result of the request will be formatted using JSON.
 #### Sample Request With Year
 
 ``` 
-https://api.winnipegjets.ca/json?firstName=Nikolaj&lastName=Ehlers&year=2019
+https://api.winnipegjets.ca/player/stats?firstName=Nikolaj&lastName=Ehlers&year=2019
 ```
 
 #### Response
@@ -372,4 +372,3 @@ Group 13:
 - [Marielle Manlulu](https://github.com/mariellemanlulu)
 - [Prakhar Sharma](https://github.com/Neil3108)
 - [Chris Ciceron](https://github.com/chrisciceron)
-
