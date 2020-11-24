@@ -1,6 +1,6 @@
 # Winnipeg Jets API
 
-This is a simple API that uses GET methods to retrieve information about Winnipeg Jets team player stats and roster.
+This is a simple API that uses GET methods to retrieve information about Winnipeg Jets hockey team player stats and roster.
 
 ## Contents
 - [API Reference Index](#api-reference-index)
